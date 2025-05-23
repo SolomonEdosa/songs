@@ -5,7 +5,12 @@ import "./App.css";
 
 function App() {
   const [count, setCount] = useState(0);
-
+  const recipe = {
+    ingredient: "tomato",
+    beauty: "lip liner",
+    iphone: 12,
+    isLegit: false,
+  };
   return (
     <>
       <div>
@@ -16,6 +21,9 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
+      <p>The stew was made with fresh {recipe.ingredient}</p>
+      <p>in 1999, maddam susan tuma invented {recipe.beauty}</p>
+      <p></p>
       <h1>Vite + React</h1>
       <h1>Hello World</h1>
       <div className="card">
